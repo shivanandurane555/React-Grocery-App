@@ -9,8 +9,10 @@ function App() {
     <>
       <div>
         <Header />
-        <Additems />
-        <Itemlist />
+        <div className="container">
+          <Additems />
+          <Itemlist />
+        </div>
         <Footer />
       </div>
     </>

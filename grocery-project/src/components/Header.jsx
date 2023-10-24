@@ -1,9 +1,9 @@
-
-
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <>
+      <div className="header">Grocery List</div>
+    </>
+  );
+};
 
-export default Header
+export default Header;
