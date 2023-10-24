@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 const Additems = () => {
+  const [name, setName] = useState("shivu");
+  const [quantity, setQuantity] = useState(1);
+  const [price, setPrice] = useState(0);
+
   return (
     <>
       <div>
@@ -6,11 +12,19 @@ const Additems = () => {
         <form className="add-item">
           <div>
             <label>Item Name</label>
-            <input type="text" />
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div>
             <label>Quantity:</label>
-            <select>
+            <select
+              value={quantity}
+              onChange={(e) => setQuantity(e.target.value)}
+              
+            >
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -18,7 +32,11 @@ const Additems = () => {
           </div>
           <div>
             <label>Price</label>
-            <input type="number" />
+            <input
+              type="number"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
           </div>
 
           <div>
