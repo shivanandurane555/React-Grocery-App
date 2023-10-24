@@ -1,6 +1,6 @@
 
 
-const Singleitem = () => {
+const Singleitem = ({item}) => {
   return (
     <div className="item">
         <div>Item Name</div>

@@ -1,12 +1,12 @@
 import Singleitem from "./Singleitem";
 
-const Itemlist = () => {
+let Itemlist = ({ items }) => {
   return (
     <div>
       <h3>Items list</h3>
-      <Singleitem />
-      <Singleitem />
-      <Singleitem />
+      {items.map((item) => (
+        <Singleitem item={item} key={item.id} />
+      ))}
     </div>
   );
 };
