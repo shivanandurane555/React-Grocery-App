@@ -86,3 +86,7 @@ body {
   font-weight: bold;
   font-size: 20px;
 }
+
+.item:nth-child(even) {
+  background-color: #bbb;
+}
