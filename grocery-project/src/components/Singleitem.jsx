@@ -1,13 +1,12 @@
-
-
-const Singleitem = ({item}) => {
+const Singleitem = ({ item }) => {
   return (
     <div className="item">
-        <div>Item Name</div>
-        <div>1</div>
-        <div>$20</div>
-      </div>
-  )
-}
+      <div>{item.name}</div>
+      <div>{item.quantity} </div>
+      <div>${item.price} </div>
+      <div>${item.price * item.quantity} </div>
+    </div>
+  );
+};
 
-export default Singleitem
+export default Singleitem;

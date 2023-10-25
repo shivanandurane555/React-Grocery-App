@@ -72,3 +72,17 @@ body {
   text-align: center;
   margin: 0.5rem 0;
 }
+
+.item .close {
+  flex: 0.3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.total {
+  text-align: end;
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 20px;
+}
